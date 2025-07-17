@@ -1,6 +1,8 @@
-export default function CountryCard({countryData}) {
+import { Link } from "react-router";
+
+export default function CountryCard({countryData}) { 
   return (
-    <a className="country-card" href="/country.html?name=Togo">
+    <Link className="country-card" to={`/${countryData.name.common}`}>
         <img src={countryData.flags.svg} alt={`${countryData.name.common} flag`} />
         <div className="card-text">
             <h3 className="card-title">{countryData.name.common}</h3>
@@ -10,6 +12,6 @@ export default function CountryCard({countryData}) {
             <p><b>Region: </b>{countryData.region}</p>
             <p><b>Capital: </b>{countryData.capital?.[0]}</p>
         </div>
-    </a>
+    </Link>
   )
 }
