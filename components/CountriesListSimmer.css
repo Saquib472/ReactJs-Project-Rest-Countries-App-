@@ -1,0 +1,63 @@
+.simmer-card {
+    height: 350px;
+}
+
+.countryCard-img-simmer{
+    background-color: #ccc;
+    height: 50%;
+}
+
+.simmer-div{
+    background-color: #ccc;
+    height: 20px;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.simmer-card div:last-child{
+    width: 50%;
+}
+
+.image-simmer{
+    width: 40%;
+    height: 320px;
+    background-color: #ccc;
+}
+
+.details-text-simmer{
+    width: 60%;
+}
+
+
+.name-simmer{
+    max-width: 180px;
+    height: 40px;
+    background-color: #ccc;
+}
+
+.common-simmer{
+    max-width: 500px;
+    height: 20px;
+    background-color: #ccc;
+}
+
+.common-simmer-last{
+    max-width: 250px;
+    height: 20px;
+    background-color: #ccc;
+}
+
+@media (width <= 940px) {
+    .image-simmer {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (width <= 400px) {
+    .image-simmer {
+        height: 150px;
+    }
+}
